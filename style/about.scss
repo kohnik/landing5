@@ -1,0 +1,343 @@
+.about {
+  position: relative;
+  background: #f8fafa;
+  &__wr {
+    @extend %wr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  &__header {
+    min-width: 100%;
+    text-align: center;
+    margin-top: 130px;
+  }
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 38px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.737;
+  }
+
+  &__capture {
+    font-size: 18px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.62);
+    text-transform: uppercase;
+    line-height: 1.556;
+  }
+
+  &__mainRow {
+    min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__secondTitle_1 {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.749);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+  &__secondTitle_2 {
+    font-size: 17px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.749);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.647;
+  }
+  &__paragraph {
+    font-size: 16px;
+    font-family: "MyriadPro-Regular";
+    color: rgba(0, 0, 0, 0.741);
+    line-height: 1.75;
+    margin-bottom: 40px;
+  }
+  &__row {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1440px) {
+  .about {
+    &__wr {
+      @extend %wr;
+      min-height: 985px;
+    }
+    &__header {
+      min-width: 100%;
+      text-align: center;
+      margin-top: 130px;
+    }
+    &__title {
+      margin: 0 0 10px 35px;
+      font-size: 38px;
+      font-family: "Montserrat";
+      color: rgba(0, 0, 0, 0.902);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.737;
+      letter-spacing: 1.2px;
+    }
+
+    &__capture {
+      margin-left: 18px;
+      letter-spacing: 1.25px;
+    }
+
+    &__mainRow {
+      min-width: 100%;
+
+      margin: 0 0px 24px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__secondTitle_1 {
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      line-height: 1.4;
+      margin-left: 9px;
+    }
+    &__secondTitle_2 {
+      font-size: 17px;
+      padding-top: 18px;
+      line-height: 1.4;
+      margin-left: 9px;
+      letter-spacing: 1.7px;
+    }
+    &__paragraph {
+      font-size: 16px;
+      font-family: "Raleway";
+      color: rgba(0, 0, 0, 0.741);
+      line-height: 1.75;
+      margin: 0 0 0px 10px;
+      letter-spacing: 0.8px;
+    }
+    &__row {
+      max-width: 500px;
+      margin: 15px 0 0px 605px;
+    }
+    &__first {
+      position: absolute;
+      top: 311px;
+      left: 205px;
+    }
+    &__col {
+      margin: -84px 0 0 3px;
+      padding-top: 10px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    &__wr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      min-height: 80vh;
+      max-width: 800px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    &__header {
+      min-width: 100%;
+      text-align: center;
+      margin-top: 130px;
+    }
+    &__title {
+      margin: 0 0 20px 0;
+      font-size: 30px;
+      font-family: "Montserrat";
+      color: rgba(0, 0, 0, 0.902);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.737;
+      letter-spacing: 1.2px;
+    }
+
+    &__capture {
+      font-size: 13px;
+      margin-left: 0px;
+      letter-spacing: 1.25px;
+    }
+
+    &__mainRow {
+      min-width: 100%;
+
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__secondTitle {
+      font-size: 15px;
+      font-family: "Merriweather";
+      color: rgba(0, 0, 0, 0.749);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.4;
+      margin-left: 0px;
+    }
+    &__paragraph {
+      max-width: 410px;
+      font-size: 15px;
+
+      font-family: "Raleway";
+      color: rgba(0, 0, 0, 0.741);
+      line-height: 1.75;
+      margin-bottom: 40px;
+      letter-spacing: 0.8px;
+    }
+
+    &__row {
+      max-width: 300px;
+      margin: 0px 0 0px 0px;
+    }
+    &__first {
+      position: relative;
+      width: 350px;
+      height: 500px;
+      top: 0px;
+      left: 0px;
+    }
+    &__col {
+      margin: 0px 0 0 0px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .about {
+    position: relative;
+
+    &__wr {
+      max-width: 550px;
+      min-height: 70vh;
+    }
+
+    &__secondTitle_1 {
+      font-size: 13px;
+    }
+    &__secondTitle_2 {
+      font-size: 9px;
+    }
+    &__paragraph {
+      max-width: 410px;
+      font-size: 11px;
+    }
+
+    &__first {
+      width: 230px;
+      height: 350px;
+      padding-left: 10px;
+    }
+    &__row {
+      max-width: 250px;
+      margin: 0 10px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .about {
+    position: relative;
+
+    &__wr {
+      max-width: 550px;
+      min-height: 66vh;
+    }
+
+    &__secondTitle_1 {
+      font-size: 12px;
+    }
+    &__secondTitle_2 {
+      font-size: 8px;
+    }
+    &__paragraph {
+      line-height: 1.4;
+    }
+    &__row {
+      max-width: 200px;
+    }
+  }
+}
+@media (max-width: 516px) {
+  .about {
+    position: relative;
+
+    &__wr {
+      max-width: 400px;
+      min-height: 80vh;
+      justify-content: center;
+    }
+
+    &__first {
+      width: 432px;
+      height: 533px;
+      margin-left: -20px;
+    }
+    &__secondTitle_1 {
+      font-size: 20px;
+
+      line-height: 1.4;
+    }
+    &__secondTitle_2 {
+      font-size: 16px;
+
+      line-height: 1.4;
+    }
+    &__paragraph {
+      font-size: 16px;
+
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+    &__row {
+      max-width: 400px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .about {
+    position: relative;
+
+    &__wr {
+      max-width: 350px;
+      min-height: 80vh;
+      justify-content: center;
+    }
+    &__first {
+      width: 310px;
+      height: 480px;
+      margin-left: -20px;
+    }
+    &__secondTitle_1 {
+      font-size: 17px;
+
+      line-height: 1.4;
+    }
+    &__secondTitle_2 {
+      font-size: 13px;
+
+      line-height: 1.4;
+    }
+    &__paragraph {
+      font-size: 15px;
+
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+    &__row {
+      min-width: 180px;
+    }
+  }
+}

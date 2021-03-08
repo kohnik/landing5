@@ -1,0 +1,224 @@
+.contact {
+  position: relative;
+  background: no-repeat center/cover;
+
+  &__img {
+    background: no-repeat center/cover;
+    min-height: 640px;
+  }
+  &__wr {
+    @extend %wr;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 640px;
+    justify-content: space-between;
+  }
+  &__col-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 614px;
+    height: 460px;
+    background-color: rgba(2, 22, 35, 0.712);
+    box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+    padding: 30px 0 0 30px;
+  }
+  &__textarea {
+    height: 100px;
+    width: 94%;
+    font-size: 15px;
+    font-family: "Raleway";
+    background: none;
+    color: rgba(255, 255, 255, 0.6);
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+    margin-bottom: 14px;
+    max-width: 580px;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.445);
+    }
+  }
+
+  &__input {
+    margin: 0 34px 14px 0;
+    width: 94%;
+    font-size: 15px;
+    font-family: "Raleway";
+    background: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 3.4;
+    background: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+    outline: none;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.452);
+    }
+  }
+
+  &__btn {
+    margin-top: 36px;
+    border-radius: 2px;
+    background-color: rgb(110, 238, 228);
+    font-size: 18px;
+    font-family: "Montserrat-Regular";
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.702);
+    text-transform: uppercase;
+    line-height: 1.556;
+    height: 53px;
+    max-width: 244px;
+    border: 0;
+    appearance: none;
+    outline: none;
+    &:hover {
+      background-color: rgba(110, 238, 227, 0.63);
+      transition: 0.25s;
+    }
+  }
+
+  &__col-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 500px;
+    height: 460px;
+    background-color: rgba(2, 22, 35, 0.712);
+    box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+  }
+  &__row {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.541);
+    line-height: 1.6;
+    margin: 36px 0 0 30px;
+  }
+  &__map {
+    display: flex;
+
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.541);
+  }
+}
+@media (max-width: 1440px) {
+  .contact {
+    min-height: 760px;
+    &__wr {
+      justify-content: center;
+    }
+    &__img {
+      min-height: 760px;
+    }
+    &__col-1 {
+      margin: 177px 26px 0 14px;
+      padding: 25px 0 0 32px;
+    }
+    &__col-2 {
+      margin-top: 177px;
+    }
+    &__input {
+      margin: 0 34px 5px 0;
+      height: 50px;
+    }
+    &__textarea {
+      height: 106px;
+      padding-top: 19px;
+    }
+    &__btn {
+      margin-top: 26px;
+      letter-spacing: 2.1px;
+    }
+    &__row {
+      margin: 20px 0 0 30px;
+      padding-top: 7.5px;
+    }
+    &__map {
+      justify-content: flex-start;
+      padding: 11px 0 0 21px;
+      margin: 9px auto;
+      width: 114%;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .contact {
+    &__col-1 {
+      width: 532px;
+    }
+    &__col-1 {
+      width: 443px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .contact {
+    min-height: 640px;
+    &__wr {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    &__img {
+      min-height: 640px;
+    }
+    &__col-1 {
+      margin: 0 6px 8px 5px;
+      width: 609px;
+
+      padding: 30px 0 0 30px;
+    }
+    &__col-2 {
+      margin: 20px 0;
+      width: 609px;
+    }
+    &__input {
+      margin: 0 34px 14px 0;
+      height: 50px;
+    }
+    &__textarea {
+      height: 90px;
+      padding-top: 19px;
+    }
+    &__btn {
+      margin-top: 18px;
+      letter-spacing: 2.1px;
+    }
+    &__row {
+      margin: 36px 0 0 30px;
+      padding-top: 0px;
+    }
+    &__map {
+      justify-content: center;
+      padding: 11px 0 0 0px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .contact {
+    position: relative;
+
+    &__wr {
+      max-width: 550px;
+    }
+    &__col {
+      margin-bottom: 5px;
+    }
+  }
+}

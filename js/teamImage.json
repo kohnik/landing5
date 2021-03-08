@@ -1,0 +1,52 @@
+
+[
+    {
+      "id": "1",
+      "name": "team_1",
+      "title": "al rayhan",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+      "specialty":"/ UI Designer"
+    },
+    {
+      "id": "2",
+      "name": "team_2",
+      "title": "kohno",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+        "specialty":"/ UI Designer"
+      },
+    {
+      "id": "3",
+      "name": "team_3",
+      "title": "martin",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+        "specialty":"/ UI/UX Designer"
+      },
+    {
+      "id": "4",
+      "name": "team_4",
+      "title": "opacha",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+        "specialty":"/ UI Designer"
+      },
+    {
+      "id": "5",
+      "name": "team_5",
+      "title": "Neponyav",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+        "specialty":"/ UI  Designer"   },
+    {
+      "id": "6",
+      "name": "team_6",
+      "title": "Okey",
+      "text":
+        "Lorem Ipsum is not simply is anaction designer random text It has roots in a piece.",
+        "specialty":"/ UI Designer"
+      }
+  ]
+  
+

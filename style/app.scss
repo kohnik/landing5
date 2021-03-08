@@ -1,0 +1,16 @@
+@import "settings";
+@import "header";
+@import "about";
+@import "feauter";
+@import "team";
+@import "contact";
+@import "footer";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+}

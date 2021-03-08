@@ -1,0 +1,363 @@
+.team {
+  position: relative;
+  min-height: 100vh;
+  background: #f8fafa;
+
+  &__wr {
+    @extend %wr;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__header {
+    text-align: center;
+    min-width: 100%;
+    margin: 130px 0 120px 0;
+  }
+  &__title {
+    margin: 0 0 20px 0;
+
+    font-size: 38px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.737;
+  }
+
+  &__capture {
+    font-size: 18px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.62);
+    text-transform: uppercase;
+    line-height: 1.556;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__col {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    margin: -14px 0 0 18px;
+  }
+  &__card :hover {
+    visibility: visible;
+  }
+
+  &__cardContent {
+    opacity: 0.98;
+    box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 330px;
+    height: 240px;
+    background: #70f6eb;
+    box-sizing: border-box;
+    padding: 43px 0 30px 40px;
+  }
+  &__shape {
+    position: absolute;
+    top: -19px;
+    left: 0;
+    padding-left: 21px;
+    opacity: 0.969;
+    width: 22px;
+    height: 19px;
+  }
+
+  &__Cardtitle {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(39, 39, 39, 0.949);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &__CardSpecialty
+  {
+    position:absolute;
+    top: 48px;
+    left: 180px;
+    z-index: 10;
+    color:gray
+  }
+  
+  &__mainText {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+    text-align: left;
+    margin: 30px 0 23px 0;
+  }
+
+  &__navLogo {
+    display: flex;
+  }
+  &__logoContainer {
+    padding-right: 11px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.702);
+  }
+}
+@media (max-width: 1440px) {
+  .team {
+    min-height: 1100px;
+    &__header {
+      margin: 99px 0 115px 0;
+    }
+    &__title {
+      margin: 0 0 9px 17px;
+
+      letter-spacing: 1.3px;
+    }
+    &__mainText {
+      margin: 14px 0 35px 0;
+    }
+    &__capture {
+      margin-left: 15px;
+      letter-spacing: 0.6px;
+    }
+    &__col {
+      margin: 0 0px 9px 14.5px;
+    }
+
+    &__row {
+      justify-content: center;
+    }
+    &__cardContent {
+      padding: 35px 0 30px 40px;
+    }
+    &__logoContainer {
+      padding-right: 13px;
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .team {
+    &__col {
+      margin: 0px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .team {
+    min-height: 100vh;
+    &__wr {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    &__header {
+      margin: 130px 0 120px 0;
+    }
+    &__title {
+      font-size: 30px;
+      margin: 0 0 20px 0;
+
+      letter-spacing: 1.3px;
+    }
+    &__mainText {
+      font-size: 11px;
+
+      margin: 16px 0 0px 0;
+    }
+    &__capture {
+      margin-left: 0px;
+      font-size: 13px;
+      letter-spacing: 0.6px;
+    }
+    &__col {
+      margin: 0 0px 15px 0px;
+    }
+
+    &__row {
+      justify-content: space-between;
+    }
+
+    &__CardSpecialty {
+      top: 22px;
+      left: 110px;
+      font-size: 12px;
+  }
+    &__cardContent {
+      width: 230px;
+      height: 140px;
+
+      padding: 20px 0 10px 13px;
+    }
+    &__Cardtitle {
+      font-size: 14px;
+    }
+    &__logoContainer {
+      font-size: 13px;
+      padding-right: 13px;
+    }
+    &__card {
+      width: 80%;
+      //height: 100%;
+    }
+    &__shape {
+      position: absolute;
+      top: -14px;
+      left: 0;
+      padding-left: 21px;
+      opacity: 0.969;
+      width: 17px;
+      height: 14px;
+    }
+    &__img {
+      height: 306px;
+      width: 250px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .team {
+    position: relative;
+
+    &__wr {
+      max-width: 550px;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      justify-content: space-between;
+    }
+    &__card {
+      margin: -14px 0 0 18px;
+    }
+    &__cardContent {
+      width: 220px;
+      height: 140px;
+
+      padding: 23px 0 10px 30px;
+    }
+
+    &__shape {
+      position: absolute;
+      top: -19px;
+      left: 0;
+      padding-left: 21px;
+      opacity: 0.969;
+      width: 22px;
+      height: 19px;
+    }
+    &__CardSpecialty {
+      top: 28px;
+      left: 150px;
+      font-size: 12px;
+  }
+    &__Cardtitle {
+      font-size: 18px;
+    }
+    &__mainText {
+      font-size: 10px;
+
+      margin: 10px 0 13px 0;
+    }
+
+    &__logoContainer {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 525px) {
+  .team {
+    position: relative;
+
+    &__wr {
+      max-width: 400px;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+    &__cardContent {
+      width: 300px;
+      height: 190px;
+    }
+
+    &__img {
+      height: 350px;
+      width: 350px;
+    }
+    &__header {
+      margin: 90px 0 80px 0;
+    }
+    &__mainText {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .team {
+    position: relative;
+
+    &__wr {
+      max-width: 400px;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__img {
+      height: 280px;
+      width: 280px;
+    }
+    &__card {
+      margin: -14px 0 0 18px;
+    }
+
+    &__cardContent {
+      width: 250px;
+      height: 160px;
+      padding: 23px 0 20px 30px;
+    }
+
+    &__Cardtitle {
+      font-size: 14px;
+    }
+    &__mainText {
+      font-size: 11px;
+
+      margin: 20px 0 16px 0;
+    }
+  }
+}
