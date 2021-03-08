@@ -16,7 +16,7 @@ let href = [
 createTeamImage();
 
 function createTeamImage() {
-  fetch("/js/teamImage.json")
+  fetch("js/teamImage.json")
     .then((response) => {
       return response.json();
     })
