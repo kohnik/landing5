@@ -1280,6 +1280,22 @@
     margin-bottom: 5px;
   }
 }
+
+
+@media (max-width: 575px) {
+  .contact__wr {
+    max-width: 262px;
+  }
+  .contact__col-1 {
+    padding: 25px 0 0 4px;
+    width: 290px;
+  }
+  .contact__col-2 {
+    width: 251px;
+  }
+}
+
+
 .footer {
   position: relative;
   background: no-repeat center/cover;
